@@ -82,10 +82,11 @@ export default function ReactPdf() {
   const [textIdCounter, setTextIdCounter] = useState<number>(0);
   const [signIdCounter, setSignIdCounter] = useState<number>(0);
   const [svg, setSvg] = useState<string>("");
-  const onResize = useCallback<ResizeObserverCallback>((entries) => {
-    const [entry] = entries;
-  }, []);
   const sensors = useSensors(useSensor(SmartPointerSensor));
+  // const onResize = useCallback<ResizeObserverCallback>((entries) => {
+  //   const [entry] = entries;
+  // }, []);
+  // useResizeObserver(containerRef, resizeObserverOptions, onResize);
 
   async function onFileUpload(
     event: React.ChangeEvent<HTMLInputElement>
