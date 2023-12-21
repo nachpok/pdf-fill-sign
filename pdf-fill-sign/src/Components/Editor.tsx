@@ -365,7 +365,7 @@ export default function ReactPdf() {
   return (
     <div className="PdfEditor">
       <header>
-        <h1 style={{ textAlign: "center" }}>Replace Adobe</h1>
+        <h1 style={{ textAlign: "center" }}>Sign & Fill</h1>
       </header>
 
       <div className="PdfEditor__container">
